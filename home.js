@@ -1,19 +1,11 @@
-console.log("start");
-
-document.write(
-  "<input type='text' placeholder='write a number' id='input1'/><br><br>"
-);
-
-document.write(
-  "<input type='button' value='Show Multiplication Table' class='myClass' id='button1'/>"
-);
 
 function showMultiplication(number) {
     // Create a new div element to hold the multiplication table
     let tableDiv = document.createElement('div');
+    tableDiv.className="multiplication-table";
   
     // Create a title for the table and append it to the tableDiv
-    let title = document.createElement('h1');
+    let title = document.createElement('h2');
     title.innerText = "Multiplication Table of " + number;
     tableDiv.appendChild(title);
   
@@ -22,6 +14,7 @@ function showMultiplication(number) {
       let multiplication = i * number;
       let result = document.createElement('p'); // Using paragraph for each line for better structure
       result.innerHTML = i + " x " + number + " = " + multiplication;
+      result.className="multiplication-line";
       tableDiv.appendChild(result);
     }
   

@@ -22,3 +22,20 @@ body {
     padding: 10px;
     text-align: center;
   }
+  .multiplication-table{
+    padding-left: 30px;
+    padding-top: 10px;
+    border: 3px solid #6d6d70;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adds a shadow around the card */
+    transition: 0.3s; /* Adds a transition effect when moving the mouse over the card */
+    width: 40%; /* Sets the width of the card */
+    border-radius: 5px; /* Optional: Rounds the corners of the card */
+  }
+    .multiplication-line{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
+        border-bottom: 1px solid #6d6d70;
+    }
